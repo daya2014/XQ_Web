@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", system-ui, sans-serif;
+    background: #0f1117;
+    color: #e6e8ef;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #161822, #1c1f2e);
+    padding: 80px 0 60px;
+    text-align: center;
+    border-bottom: 1px solid #262a3a;
+}
+
+.hero.small {
+    padding: 40px 0 30px;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #9aa0b4;
+    margin-bottom: 16px;
+}
+
+.bio {
+    color: #b0b6c8;
+    max-width: 560px;
+    margin: 0 auto 24px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn.primary {
+    background: #5b7fff;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #4568e6;
+}
+
+.btn.secondary {
+    background: #232736;
+    color: #d0d4e3;
+    border: 1px solid #32374a;
+}
+
+.btn.small {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background: #232736;
+    color: #d0d4e3;
+    border: 1px solid #32374a;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #171a26;
+    border: 1px solid #262a3a;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #b0b6c8;
+    margin-bottom: 14px;
+}
+
+.card.placeholder {
+    opacity: 0.6;
+}
+
+.card-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.card-tags span {
+    background: #232736;
+    color: #c4c9db;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.download {
+    text-align: center;
+}
+
+.download .tip {
+    margin-top: 12px;
+    color: #9aa0b4;
+    font-size: 0.9rem;
+}
+
+.breadcrumb {
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    color: #9aa0b4;
+}
+
+.breadcrumb a {
+    color: #9aa0b4;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #fff;
+}
+
+footer {
+    border-top: 1px solid #262a3a;
+    padding: 24px 0;
+    text-align: center;
+    color: #6c728a;
+    font-size: 0.9rem;
+}
