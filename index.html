@@ -3,49 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小龙Dev C++代码辅助器 - 官方发行站</title>
-    <link rel="stylesheet" href="../../style.css">
+    <title>杏柒 - 个人作品集</title>
+<base href="./"> <!-- 必须加这一行！这是解决线上路径问题的核心 -->
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png"> <!-- 记得上传一张favicon.png到根目录哦 -->
 </head>
 <body>
-    <header class="hero small">
+    <header class="hero">
         <div class="container">
-            <p class="breadcrumb"><a href="../../index.html">首页</a> / 小龙代码辅助器</p>
-            <h1>🐉 小龙Dev C++代码辅助器 0.1--Beta</h1>
-            <p class="subtitle">为 C/C++ 初学者打造的轻量编译助手</p>
+            <h1>👋 你好，我是杏柒</h1>
+            <p class="subtitle">开发者 / 工具创作者 / 独立项目作者</p>
+            <p class="bio">这里是我的个人集合官网，收录我开发的工具、辅助器和小项目。</p>
             <div class="hero-actions">
-                <a class="btn primary" href="#download">立即下载</a>
-                <a class="btn secondary" href="https://github.com/daya2014/xiaolong_helper" target="_blank">GitHub 仓库</a>
+                <a class="btn primary" href="#projects">查看项目</a>
+                <a class="btn secondary" href="https://github.com/daya2014" target="_blank">GitHub</a>
             </div>
         </div>
     </header>
 
-    <section class="features container">
-        <h2>核心功能</h2>
+    <section id="projects" class="projects container">
+        <h2>我的项目</h2>
         <div class="cards">
             <div class="card">
-                <h3>⚡ 一键编译</h3>
-                <p>自动调用本地 g++/gcc，无需手动配置复杂环境。</p>
+                <h3>🐉 小龙C++代码辅助器</h3>
+                <p>为 C/C++ 初学者打造的轻量编译助手，支持一键编译、智能纠错和中文报错修复。</p>
+                <div class="card-tags">
+                    <span>Python</span>
+                    <span>Windows</span>
+                    <span>工具</span>
+                </div>
+                <a class="btn small" href="projects/dragon-helper/">进入项目页</a>
             </div>
-            <div class="card">
-                <h3>🔍 智能纠错</h3>
-                <p>自动识别常见编译错误，并给出中文修复提示。</p>
-            </div>
-            <div class="card">
-                <h3>🛡️ 安全运行</h3>
-                <p>编译失败时自动清理旧程序，避免误运行过期结果。</p>
-            </div>
-            <div class="card">
-                <h3>🌐 中文友好</h3>
-                <p>针对中文报错、Unicode 转义等问题做了专门处理。</p>
+
+            <div class="card placeholder">
+                <h3>下一个项目</h3>
+                <p>这里会展示我的新工具、小游戏或其他作品。</p>
+                <div class="card-tags">
+                    <span>即将上线</span>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="download" class="download container">
-        <h2>下载</h2>
-        <p>当前版本：<strong>v6.2</strong></p>
-        <a class="btn primary" href="downloads/DragonHelper-v6.2.exe">下载 Windows 安装包</a>
-        <p class="tip">提示：使用前请确保已安装 MinGW / g++。</p>
     </section>
 
     <footer>
