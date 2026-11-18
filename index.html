@@ -1,14 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杏柒 - 个人作品集</title>
-<base href="./"> <!-- 必须加这一行！这是解决线上路径问题的核心 -->
+
+    <!-- base 必须紧跟 charset/viewport，放在所有含 href 的元素之前 -->
+    <base href="./">
+
+    <title>杏柒 - 个人作品集 | 开发者与独立项目作者</title>
+    <meta name="description" content="杏柒的个人作品集官网，收录小龙C++代码辅助器等自研工具、辅助器与小项目。">
+    <meta name="author" content="杏柒">
+    <meta name="theme-color" content="#0b1220">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="杏柒 - 个人作品集">
+    <meta property="og:description" content="开发者 / 工具创作者 / 独立项目作者，收录我开发的工具、辅助器和小项目。">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico" type="image/ico"> <!-- 记得上传一张favicon.ico到根目录哦 -->
 </head>
 <body>
+    <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:0;">跳到主内容</a>
+
     <header class="hero">
         <div class="container">
             <h1>👋 你好，我是杏柒</h1>
@@ -16,38 +33,42 @@
             <p class="bio">这里是我的个人集合官网，收录我开发的工具、辅助器和小项目。</p>
             <div class="hero-actions">
                 <a class="btn primary" href="#projects">查看项目</a>
-                <a class="btn secondary" href="https://github.com/daya2014" target="_blank">GitHub</a>
+                <a class="btn secondary" href="https://github.com/daya2014" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
     </header>
 
-    <section id="projects" class="projects container">
-        <h2>我的项目</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>🐉 小龙C++代码辅助器</h3>
-                <p>为 C/C++ 初学者打造的轻量编译助手，支持一键编译、智能纠错和中文报错修复。</p>
-                <div class="card-tags">
-                    <span>Python</span>
-                    <span>Windows</span>
-                    <span>工具</span>
-                </div>
-                <a class="btn small" href="index.xiaolong_helper.html">进入项目页</a>
-            </div>
+    <main id="main">
+        <section id="projects" class="projects container" aria-labelledby="projects-title">
+            <h2 id="projects-title">我的项目</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>🐉 小龙C++代码辅助器</h3>
+                    <p>为 C/C++ 初学者打造的轻量编译助手，支持一键编译、智能纠错和中文报错修复。</p>
+                    <div class="card-tags">
+                        <span>Python</span>
+                        <span>Windows</span>
+                        <span>工具</span>
+                    </div>
+                    <a class="btn small" href="projects/xiaolong_helper/index.html">进入项目页</a>
+                </article>
 
-            <div class="card placeholder">
-                <h3>下一个项目</h3>
-                <p>这里会展示我的新工具、小游戏或其他作品。</p>
-                <div class="card-tags">
-                    <span>即将上线</span>
-                </div>
+                <article class="card placeholder" aria-label="即将上线的项目占位">
+                    <h3>下一个项目</h3>
+                    <p>这里会展示我的新工具、小游戏或其他作品。</p>
+                    <div class="card-tags">
+                        <span>即将上线</span>
+                    </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <p>© 2026 杏柒 · 由 GitHub Pages 托管</p>
+            <p>个人赶工开发而成，可能有缺陷</p>
+            <p>邮箱：3985435379@qq.com</p>
         </div>
     </footer>
 </body>

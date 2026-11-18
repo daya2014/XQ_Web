@@ -1,53 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小龙Dev C++代码辅助器 - 官方发行站</title>
-<base href="./../../">
-<link rel="stylesheet" href="style.xiaolong_helper.css">
+    <base href="./../../">
+    <title>小龙 Dev C++ 代码辅助器 0.1 Beta - 官方发行站</title>
+    <meta name="description" content="小龙代码辅助器是一款为 C/C++ 初学者打造的轻量编译助手，支持一键调用本地 g++/gcc 编译、智能中文纠错、安全运行清理。">
+    <meta name="author" content="杏柒">
+    <meta name="theme-color" content="#1e1e1e">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="小龙 Dev C++ 代码辅助器 0.1 Beta">
+    <meta property="og:description" content="为 C/C++ 初学者打造的轻量编译助手：一键编译、智能中文纠错、安全运行清理。">
+    <meta property="og:locale" content="zh_CN">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="小龙 Dev C++ 代码辅助器 0.1 Beta">
+    <meta name="twitter:description" content="为 C/C++ 初学者打造的轻量编译助手。">
+
+    <link rel="stylesheet" href="style.xiaolong_helper.css">
+    <style>
+        .skip-link{position:absolute;left:-9999px;top:0;background:#1e1e1e;color:#fff;padding:8px 14px;z-index:9999;border-radius:0 0 6px 0;}
+        .skip-link:focus{left:0;}
+    </style>
 </head>
 <body>
+    <a class="skip-link" href="#main">跳到主内容</a>
+
     <header class="hero small">
         <div class="container">
-            <p class="breadcrumb"><a href="../../index.html">首页</a> / 小龙代码辅助器</p>
-            <h1>🐉 小龙Dev C++代码辅助器 0.1--Beta</h1>
+            <nav class="breadcrumb" aria-label="面包屑导航">
+                <a href="index.html">首页</a> / <span aria-current="page">小龙代码辅助器</span>
+            </nav>
+            <h1>🐉 小龙 Dev C++ 代码辅助器 0.1 Beta</h1>
             <p class="subtitle">为 C/C++ 初学者打造的轻量编译助手</p>
             <div class="hero-actions">
                 <a class="btn primary" href="#download">立即下载</a>
-                <a class="btn secondary" href="https://github.com/daya2014/xiaolong_helper" target="_blank">GitHub 仓库</a>
+                <a class="btn secondary" href="https://github.com/daya2014/xiaolong_helper" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
             </div>
         </div>
     </header>
 
-    <section class="features container">
-        <h2>核心功能</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>⚡ 一键编译</h3>
-                <p>自动调用本地 g++/gcc，无需手动配置复杂环境。</p>
+    <main id="main">
+        <section class="features container" aria-labelledby="features-title">
+            <h2 id="features-title">核心功能</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>⚡ 一键编译</h3>
+                    <p>自动调用本地 g++/gcc，无需手动配置复杂环境。</p>
+                </article>
+                <article class="card">
+                    <h3>🔍 智能纠错</h3>
+                    <p>自动识别常见编译错误，并给出中文修复提示。</p>
+                </article>
+                <article class="card">
+                    <h3>🛡️ 安全运行</h3>
+                    <p>编译失败时自动清理旧程序，避免误运行过期结果。</p>
+                </article>
+                <article class="card">
+                    <h3>🌐 中文友好</h3>
+                    <p>针对中文报错、Unicode 转义等问题做了专门处理。</p>
+                </article>
             </div>
-            <div class="card">
-                <h3>🔍 智能纠错</h3>
-                <p>自动识别常见编译错误，并给出中文修复提示。</p>
-            </div>
-            <div class="card">
-                <h3>🛡️ 安全运行</h3>
-                <p>编译失败时自动清理旧程序，避免误运行过期结果。</p>
-            </div>
-            <div class="card">
-                <h3>🌐 中文友好</h3>
-                <p>针对中文报错、Unicode 转义等问题做了专门处理。</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="download" class="download container">
-        <h2>下载</h2>
-        <p>当前版本：<strong>v6.2</strong></p>
-        <a class="btn primary" href="downloads/DragonHelper-v0.1.exe">下载 Windows 安装包</a>
-        <p class="tip">提示：使用前请确保已安装 MinGW / g++。</p>
-    </section>
+        <section id="download" class="download container" aria-labelledby="download-title">
+            <h2 id="download-title">下载</h2>
+            <p>当前版本：<strong>v0.1 Beta</strong></p>
+            <a class="btn primary" href="downloads/xiaolong_helper-v0.1.exe">下载 Windows 安装包</a>
+            <p class="tip">提示：使用前请确保已安装 MinGW / g++。</p>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
